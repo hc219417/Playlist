@@ -1,0 +1,30 @@
+/**
+ *   @file: test_main.cc
+ * @author: Hannah Culver
+ *   @date: February 9, 2022
+ *  @brief: main to test the Song class
+ */
+
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <string>
+#include "Song.h"
+using namespace std;
+
+int main(){
+
+    Song s1, s2;
+
+    s1.input(cin);
+    s2.input(cin);
+
+    s1.output(cout);
+    s2.output(cout);
+
+    if(s1 == s2){
+        cout << "You entered the same song silly ;)" << endl;
+    }
+
+    return 0;
+}
